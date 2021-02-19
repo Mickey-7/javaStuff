@@ -1,0 +1,6 @@
+download json-simple-1.1.1.jar file
+
+-> File
+    -> Project Structure
+        -> click + icon
+            -> then locate the directory on the downloaded jar file
