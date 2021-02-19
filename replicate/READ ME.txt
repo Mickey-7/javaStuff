@@ -1,0 +1,67 @@
+error:
+
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-02-19 23:59:16.809 ERROR 92 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   :
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field fileWatcher in com.example.replicate.bootstrap.Bootstrap required a bean of type 'com.example.replicate.util.FileWatcher' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.replicate.util.FileWatcher' in your configuration.
+
+
+Process finished with exit code 1
+
+solution:
+
+create a config/FileWatcherConfig class
+
+    @Component
+    public class FileWatcherConfig {
+        @Bean(name = "fileWatcherBean")
+        public FileWatcher fileWatcherBean(){
+            return new FileWatcher();
+        }
+    }
+
+then on the Bootstrap class
+
+        @Resource(name = "fileWatcherBean")
+        private FileWatcher fileWatcher;
+
+        @EventListener(ContextRefreshedEvent.class)
+        public void onInit(){
+            fileWatcher.run();
+        }
+
+--------------------------------------------------------------------------------------------------
+
+error:
+
+javax.xml.bind.JAXBException: Implementation of JAXB-API has not been found on module path or classpath.
+ - with linked exception:
+[java.lang.ClassNotFoundException: com.sun.xml.bind.v2.ContextFactory]
+
+solution:
+
+add below dependency on pom.xml
+
+		<!-- https://mvnrepository.com/artifact/org.glassfish.jaxb/jaxb-runtime -->
+		<dependency>
+			<groupId>org.glassfish.jaxb</groupId>
+			<artifactId>jaxb-runtime</artifactId>
+			<version>2.3.2</version>
+		</dependency>
+
+--------------------------------------------------------------------------------------------------
