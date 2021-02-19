@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>Spring Boot - AJAX POST GET Example</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="webjars/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h3 style="color:blue">POST-GET AJAX NESTED OBJECT</h3>
+
+        <div class="row col-md-6">
+            <form id="customerForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter Name" />
+                </div>
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" min="18" max="100" class="form-control" id="age" placeholder="Enter Age" />
+                </div>
+                <div class="form-group">
+                    <label for="street">Street:</label>
+                    <input type="text" class="form-control" id="street" placeholder="Enter Street" />
+                </div>
+                <div class="form-group">
+                    <label for="postcode">PostCode:</label>
+                    <input type="text" class="form-control" id="postcode" placeholder="Enter PostCode" />
+                </div>
+                <button style="margin-bottom:10px" type="submit" class="btn btn-default">Add Customer</button>
+            </form>
+
+            <!-- Table of Adding Customer -->
+            <table id="customerTable" class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Street</th>
+                        <th>Postcode</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+
+            <!-- DIV Submit customer  -->
+            <!-- SUBMIT Customer Button to Server -->
+            <button id="postCustomersBtn" style="margin-bottom:10px" type="submit" class="btn btn-default">Post
+                Customers</button>
+
+            <!-- Message result from server -->
+            <div id="postResultDiv" style="margin:10px 0px 10px 0px;">
+            </div>
+
+
+            <!-- Get All Customers from back-end -->
+            <button id="getAllCustomersBtnId" type="button" class="btn btn-primary"
+                style="margin:10px 0px 10px 0px;">Get All Customers</button>
+            <div id="resultGetAllCustomerDiv">
+                <ul class="list-group">
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="webjars/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/getrequest.js"></script>
+    <script src="js/postrequest.js"></script>
+</body>
+
+</html>
