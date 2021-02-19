@@ -1,0 +1,5 @@
+reference:
+
+https://medium.com/panchalprogrammingacademy/create-a-spring-mvc-project-with-maven-and-intellij-idea-community-edition-1d31b3efe078
+
+https://medium.com/@yuntianhe/create-a-web-project-with-maven-spring-mvc-b859503f74d7
