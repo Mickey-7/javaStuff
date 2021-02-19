@@ -1,0 +1,15 @@
+https://www.youtube.com/watch?v=w7dOS8KBSEU
+
+create java project ->
+create lib folder ->
+add the jar file there ->
+
+File ->
+Project Structre -> 
+Libraries ->
+Click the + (add) ->
+Specify the created lib directory ->
+Apply ->
+
+To Test:
+Create a new Intance of the class from the jar

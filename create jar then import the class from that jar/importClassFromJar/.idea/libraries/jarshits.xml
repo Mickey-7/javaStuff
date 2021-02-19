@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jarshits">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/lib/jarshits.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

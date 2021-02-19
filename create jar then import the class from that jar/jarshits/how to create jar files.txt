@@ -1,0 +1,28 @@
+https://stackoverflow.com/questions/1082580/how-to-build-jars-from-intellij-properly
+
+299
+This is still an issue in 2017, I hope it will help somebody out there! 
+I found 2 possibilities to create working jar-s under IntelliJ 2017.2
+
+File -> 
+Project Structure -> 
+Project Settings -> 
+Artifacts -> 
+Click green plus sign -> 
+Jar -> 
+From modules with dependencies ->
+Select the main class, and be sure to change the manifest folder ->
+
+You have to change manifest directory:
+Project_Folder_Name\src\main\java 
+
+replace "java" with "resources"
+Project_Folder_Name\src\main\resources
+
+To build your artifact go to build artifacts and choose "rebuild". 
+It will create an "out" folder with your jar file and its dependencies.
+
+To Test:
+
+Go to the jar file directory and type:
+java -jar Jar_File_Name.jar
