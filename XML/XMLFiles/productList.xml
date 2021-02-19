@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ProductList>
+    <Product>
+        <productId>I1</productId>
+        <productName>Samsung LED</productName>
+        <price>56284</price>
+        <stock>7</stock>
+    </Product>
+    <Product>
+        <productId>I3</productId>
+        <productName>SONY LCD TV</productName>
+        <price>30000.00</price>
+        <stock>54</stock>
+    </Product>
+</ProductList>
