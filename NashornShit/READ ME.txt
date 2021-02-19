@@ -1,0 +1,3 @@
+https://winterbe.com/posts/2014/04/05/java8-nashorn-tutorial/
+
+https://github.com/winterbe/java8-tutorial/blob/master/res/nashorn2.js
