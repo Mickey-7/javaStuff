@@ -1,0 +1,7 @@
+https://www.youtube.com/watch?v=hvk4fUHFKNM
+
+for ajax implementation:
+https://mkyong.com/spring-boot/spring-boot-ajax-example/
+
+
+changes on DB will automatically reflect on jsp view
