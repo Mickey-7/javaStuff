@@ -1,7 +1,10 @@
 package com.example.consumeapiresttemplateclient.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Person {
     private Integer id;
+    @JsonProperty("firstName")
     private String name;
     private Address address;
 

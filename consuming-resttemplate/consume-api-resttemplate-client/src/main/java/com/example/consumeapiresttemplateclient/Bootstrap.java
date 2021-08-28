@@ -15,6 +15,12 @@ public class Bootstrap {
     @EventListener(ContextRefreshedEvent.class)
     public void onInit(){
 //        clientController.getForObject();
-        clientController.exchange();
+//        clientController.exchange();
+//        clientController.headForHeaders();
+//        clientController.getForEntity();
+//        clientController.delete();
+//        clientController.put();
+//        clientController.postForObject();
+        clientController.postForLocation();
     }
 }
