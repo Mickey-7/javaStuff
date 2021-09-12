@@ -1,0 +1,63 @@
+https://howtodoinjava.com/spring-boot2/logging/spring-boot-logging-configurations/
+https://www.youtube.com/watch?v=Ti_zxieY9V8
+https://github.com/kishanjavatrainer/SpringBootLoggerWithLogback/blob/master/SpringBootLoggerWithLogback/src/main/resources/logback.xml
+
+---------------------------------------------------------------------------
+
+default on console:
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.5.4)
+
+2021-09-11 08:07:34.869  INFO 6172 --- [           main] ringBootLoggingConfigurationsApplication : Starting SpringBootLoggingConfigurationsApplication using Java 15.0.1 on DESKTOP-ADOT1IA with PID 6172 (C:\Users\donat\Downloads\spring-boot-logging-configurations\spring-boot-logging-configurations\target\classes started by donat in C:\Users\donat\Downloads\spring-boot-logging-configurations\spring-boot-logging-configurations)
+2021-09-11 08:07:34.871  INFO 6172 --- [           main] ringBootLoggingConfigurationsApplication : No active profile set, falling back to default profiles: default
+2021-09-11 08:07:35.778  INFO 6172 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-11 08:07:35.778  INFO 6172 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-09-11 08:07:35.839  INFO 6172 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-11 08:07:36.151  INFO 6172 --- [           main] ringBootLoggingConfigurationsApplication : Started SpringBootLoggingConfigurationsApplication in 1.658 seconds (JVM running for 1.993)
+2021-09-11 08:07:36.154  INFO 6172 --- [           main] ringBootLoggingConfigurationsApplication : simple log statement with inputs 1, 2, and 3
+
+after setting the logging pattern for console on application.properties
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.5.4)
+
+2021-09-12 09:25:42 [main] INFO  - c.e.s.SpringBootLoggingConfigurationsApplication - Starting SpringBootLoggingConfigurationsApplication using Java 15.0.1 on DESKTOP-ADOT1IA with PID 8524 (C:\Users\donat\Downloads\spring-boot-logging-configurations\spring-boot-logging-configurations\target\classes started by donat in C:\Users\donat\Downloads\spring-boot-logging-configurations\spring-boot-logging-configurations)
+2021-09-12 09:25:42 [main] INFO  - c.e.s.SpringBootLoggingConfigurationsApplication - No active profile set, falling back to default profiles: default
+2021-09-12 09:25:43 [main] INFO  - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-09-12 09:25:43 [main] INFO  - o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-09-12 09:25:43 [main] INFO  - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-09-12 09:25:43 [main] INFO  - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-09-12 09:25:43 [main] INFO  - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 948 ms
+2021-09-12 09:25:43 [main] INFO  - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-12 09:25:43 [main] INFO  - c.e.s.SpringBootLoggingConfigurationsApplication - Started SpringBootLoggingConfigurationsApplication in 1.715 seconds (JVM running for 2.056)
+2021-09-12 09:25:43 [main] INFO  - c.e.s.SpringBootLoggingConfigurationsApplication - simple log statement with inputs 1, 2, and 3
+
+Enable logging to a file in intellij
+Run -> Edit Configurations -> Modify (Build and run) -> Logs -> Save console output to file
+
+---------------------------------------------------------------------------
+
+No log file is created using
+    logging.file
+since it is already deprecated
+    logging.file.name=directory/filename
+will do the job
+
+---------------------------------------------------------------------------
+
+
+
+
+
+

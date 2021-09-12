@@ -1,0 +1,4 @@
+2021-09-12 10:14:54 [main] INFO  c.e.s.SpringBootLoggingConfigurationsApplication - Starting SpringBootLoggingConfigurationsApplication using Java 15.0.1 on DESKTOP-ADOT1IA with PID 7964 (C:\Users\donat\Downloads\spring-boot-logging-configurations\spring-boot-logging-configurations\target\classes started by donat in C:\Users\donat\Downloads\spring-boot-logging-configurations\spring-boot-logging-configurations)
+2021-09-12 10:14:54 [main] INFO  c.e.s.SpringBootLoggingConfigurationsApplication - No active profile set, falling back to default profiles: default
+2021-09-12 10:14:55 [main] INFO  c.e.s.SpringBootLoggingConfigurationsApplication - Started SpringBootLoggingConfigurationsApplication in 1.592 seconds (JVM running for 2.03)
+2021-09-12 10:14:55 [main] INFO  c.e.s.SpringBootLoggingConfigurationsApplication - simple log statement with inputs 1, 2, and 3
